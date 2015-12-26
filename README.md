@@ -340,7 +340,7 @@ LLL-reduces a basis of Z\_NR&lt;double&gt;. There is no guarantee and the LM\_WR
 </blockquote>
 <tr><td><tt>int bkzReduction(IntMatrix&amp; b, IntMatrix&amp; u, int blockSize, int flags = BKZ_DEFAULT)</tt><br>
 Same as above, but also computes the transform matrix u such that b<sub>new</sub> = u &times; b<sub>old</sub>.
-<tr><td><tt>int bkzReduction(const BKZParam&amp; param)</tt><br>
+<tr><td><tt>int bkzReduction(IntMatrix* B, IntMatrix* U, const BKZParam&amp param, FloatType floatType=FT_DEFAULT, int precision=0)</tt><br>
 <p>Same as above with more options.</p>
 <p>Fields of BKZParam:</p>
 <blockquote>
